@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Project: Accessible Student Admission Page</title>
+    <link rel="stylesheet" href="Assignment_18.css">
+</head>
+<body>
+    <header>
+    <h1>ABC College Admission 2026</h1> 
+    </header>
+    <main>
+    <h2 >Courses and Fees</h2>
+    <table >
+        <caption>Available Courses</caption>
+        <thead>
+            <tr style="background-color: rgba(190, 201, 243, 0.76);">
+                <th>Course</th>
+                <th>Seats</th>
+                <th>Fees</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>B.Tech CSE</td>
+                <td>120</td>
+                <td>&#x20B9;90,000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>BCE</td>
+                <td>60</td>
+                <td>&#x20B9;45,000</td>
+            </tr>
+        </tfoot>
+    </table> <br> <br>
+
+    <form action="submit" width="500" align="left">
+        <fieldset >
+            <legend>Application Form</legend>
+            <label for="username">Name:</label><br>
+            <input type="text" id="username" name="username" required> <br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required> <br><br>
+            <label for="course">Course:</label>
+            <select name="Course" id="course" required >
+                <option value="" disabled selected>Choose Course</option>
+                <option value="CSE">B.Tech CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="MBA">MBA</option>
+                <option value="EE">EE</option>
+                <option value="M.Tech">M.Tech</option>
+            </select> <br><br>
+            <label for="statement">Statement:</label> <br>
+            <textarea name="statement" id="statement" placeholder="write here..."></textarea> <br><br>
+            <button type="submit">Apply</button>
+
+        </fieldset>
+    </form>
+    </main>
+    <footer>
+        <p name="webfoot">&copy;2026 ABC College</p>
+    </footer>
+    
+</body>
+</html>
